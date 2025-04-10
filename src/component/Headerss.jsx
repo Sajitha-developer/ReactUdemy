@@ -14,7 +14,7 @@ function Headerss() {
                     <div className="mylearning">
                         <a href="#">My learning</a> {/* Make sure to add href or handle it accordingly */}
                         <div className="mylearning__popup">
-                            <p>You did not purchase anything yet</p>
+                            <p>You did not purchase anything yet!</p>
                         </div>
                     </div>
                     <i className="fa-solid fa-cart-shopping" style={{ color: '#07090e' }} aria-label="Shopping Cart"></i>
