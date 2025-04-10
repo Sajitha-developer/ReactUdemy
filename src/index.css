@@ -1,0 +1,251 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  text-transform: capitalize;
+  font-family: "Gabarito", sans-serif;
+
+}
+.navbar{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid black 1px;
+  align-items: center;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 2;
+}
+.navbar__s1__title{
+  color: #9915f1;
+}
+.navbar__s2{
+  padding: 10px;
+  display: flex;
+  width: 60%;
+  border-radius: 30px;
+  border: solid 2px black;
+  gap: 10px;
+
+}
+.navbar__s2 input{
+  border: none;
+  font-size: 16px;
+  width:100% ;
+}
+.navbar__s2 input:focus{
+  outline: none;
+}
+.navbar__s3{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.navbar__s3 a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.mylearning{
+  position: relative;
+
+}
+.mylearning__popup{
+  position: absolute;
+  background-color: white;
+  padding: 20px;
+  border:solid 2px black;
+  width: 100px;
+  top:25px;
+  display: none;
+
+
+}
+.mylearning:hover .mylearning__popup{
+  display: block;
+}
+.desc{
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.desc p{
+  background-color: rgb(95, 1, 95);
+  color: white;
+  padding: 10px;
+  border-radius: 30px;
+  margin: 2px;
+  border: 1px solid transparent ;
+  transition-duration: 2s;
+ 
+}
+.desc p:hover{
+  color: #a435f0;
+  background-color: white;
+  border: 1px solid black;
+ 
+}
+.sale__image{
+  width: 100%;
+  position: relative;
+}
+ 
+
+.image__offer{
+  width: 35%;
+  border: 2px solid black;
+  background-color: white;
+  padding: 2%;
+  position: absolute;
+  top:30%;
+  left:10%;
+  animation-name: square;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+  
+
+
+@keyframes square{
+  0%{
+      transform: scale(0.5);
+      opacity: 0;
+  }
+  100%{
+      transform: scale(1);
+      opacity: 1;
+  }
+
+}
+
+.recommended{
+  padding: 10px;
+}
+.recommended__container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.recommended__title{
+  font-weight: bolder;
+}
+.course__card{
+  flex-grow: 1;
+  flex-basis: 20%;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.course__card img{
+  border-radius: 5px;
+  width: 100%;
+}
+.topics{
+  margin-top: 30px;
+}
+.topics h1{
+  padding-left: 10px;
+}
+
+
+.topics__container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 20px;
+}
+.topics__container p{
+  border: solid 1px black;
+  padding: 10px;
+  flex-grow: 1;
+  flex-basis: 25%;
+}
+.popular__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.popular{
+  padding: 10px;
+}
+.footer{
+  background-color: black;
+  color: white;
+  padding: 30px;
+  width: 95%;
+  margin-top: 31px;
+}
+.footer__one{
+  display: flex;
+  gap: 10px;
+}
+.footer__one p{
+  cursor: pointer;
+  margin: 20px;
+}
+.footer__one p:hover{
+  text-decoration: underline;
+}
+.footer__two{
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+@media screen and (min-width:700px) {
+  .navbar__s4{
+      display: none;
+
+  }
+  
+}
+@media screen and (max-width:700px) {
+  .navbar__s3{
+      display: none;
+  }
+  .navbar__s4{
+      display: block;
+  }
+  .navbar__s2{
+      display: none;
+  }
+  .desc{
+      display: none;
+  }
+  .image__offer{
+      position:absolute;
+      top:12%;
+      left: 10px;
+      padding: 1%;
+      width: 45%;
+      font-size: 12px;
+   }
+}
+
+
+@media screen and (max-width:800px) {
+  body{
+      font-size: 16px;
+
+  }
+}
+
+@media screen and (max-width:600px) {
+  .course__card{
+      flex-basis: 40%;
+      /* gap: 30px; */
+  }
+  
+}
