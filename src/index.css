@@ -209,7 +209,7 @@ body{
       display: none;
 
   }
-  
+ 
 }
 @media screen and (max-width:700px) {
   .navbar__s3{
@@ -230,8 +230,18 @@ body{
       left: 10px;
       padding: 1%;
       width: 45%;
-      font-size: 12px;
+      font-size: 11px;
    }
+   .footer__one p{
+    font-size: 10px;
+  }
+  .recommended__container h3,p{
+    font-size: 14px;
+  }
+  .topics h1{
+    font-size: 26px;
+  }
+  
 }
 
 
